@@ -1,0 +1,109 @@
+:root{
+    --primary: #56042C;
+    --secondary: #1077C3;
+    --text: #FEC310;
+    --secondaryv2: #49BCE3;
+}
+*{
+    font-family: Poppins;
+}
+nav{
+    background-color: var(--primary);
+}
+
+
+.nav-link{
+    color: var(--text);
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: white;
+}
+
+
+#main{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--secondaryv2);
+}
+#main3{
+    display: grid;
+    height: 100vh;
+    background-color: var(--secondaryv2);
+}
+#main2{
+    display: grid;
+    height: 75vh;
+    background-color:white;
+    grid-template-columns: 1fr 1fr;
+}
+#pic1{
+    background: url(https://i.pinimg.com/originals/27/dc/6f/27dc6fc35f86b1421ec08a93d2f44502.png);
+    height: 100%;
+    background-position-x: right;
+}
+
+#pic2{
+    background: url(https://www.footyrenders.com/render/Hakim-Ziyech-1.png);
+    height: 100%;
+}
+.bigp{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px;
+}
+#vs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#listmatch{
+    background-color: var(--primary);
+
+}
+.match{
+    display: flex;
+    gap: 2rem;
+    padding-left: 30%;
+    padding-top: 10px;
+    color: white;
+}
+.time{
+    padding-left: 50px;
+    color: var(--secondary);
+}
+
+@media screen and (min-width: 1024px){
+    .nav-item{
+        position: relative;
+        left: 50%;
+        margin-right: 2rem;
+    }
+}
+
+
+/*medium*/
+@media screen and (max-width: 1024px){
+    #main{
+        grid-template-columns: 1fr 1fr;
+    }
+    #pic2{
+        visibility: hidden;
+    }
+}
+/*small*/
+@media screen and (max-width: 600px){
+    #main{
+        grid-template-columns: 1fr;
+    }
+    #pic1{
+        visibility: hidden;
+    }
+}
+
+
+
